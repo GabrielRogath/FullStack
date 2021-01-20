@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FullStack-Developer</title>
+
+        <!--link rel='icon' href='favicon.ico' type='image/x-icon' -->  
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio">
+        <meta name="keywords" content="Software Developer, Frontend,Backend,FullStack,Web,Mobile,Microservices,APIs">
+        <meta name="author" content="Gabriel Rogath">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='icon' href='Devops3.png' type='image/x-icon' > 
+       
+    </head>
+
+    <style>
+
+        body{
+
+            background-color: slategrey;
+
+            text-emphasis-color: red;
+        }
+
+        header{
+            text-align: center;
+        }
+
+        #thumbnail {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+  }
+  .fullCard {
+    width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    padding: 4px;
+    margin: 10px 5px;
+    margin:auto;
+   
+   
+  }
+
+  .cardContent {
+    padding: 10px;
+  }
+  .cardText {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    position:relative;
+    top:15px;
+    left:20px;
+
+  }
+
+  h4 {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 27px;
+    font-weight: 800;
+
+    opacity:0.7;
+
+    text-transform:none;
+    text-transform:lowercase;
+    text-transform:uppercase;
+    text-transform:capitalize;
+    text-transform:initial;
+    text-transform:inherit;
+    
+  }
+
+
+  .jina{
+    
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .stack{
+    display: flex;
+    justify-content: center;
+  }
+  .mawasiliano{
+    display: flex;
+    justify-content: center;
+  }
+
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        .item5{background:PaleGreen;}
+        .item6{background:darkslateblue;}
+      
+        .downcontainer {
+         /*Codes Removed
+          font-size: 40px;
+          background: LightGray;
+ min-height: 70px;
+         
+         */
+         
+          width: 100%;
+          
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;    /*  I have reduce one row here 1fr*/
+          grid-gap: 25px;
+          /* Only change code below this line */
+      justify-items:center;
+      margin-left: 15px;
+      margin-right: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      border: 1px solid #ccc;
+    border-radius: 5px;
+   
+          /* Only change code above this line */
+        }
+
+        .maincontainer{
+            margin: auto;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .project1{
+            background:#c6faf1;
+            margin:auto;
+           
+
+        }
+
+        .project2{
+            background:#c6faf1;
+            margin:auto;
+        }
+
+        .project3{
+            background:#c6faf1;
+            margin:auto;
+        }
+
+        .projectscontainer{
+            margin:auto;
+            width: 60%;
+            
+            margin-left: 15px;
+            margin-right: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+            display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr;    /*  I have reduce two row here 1fr ifr*/
+          grid-gap: 5px;
+          font-size: 25px;
+         margin: auto;
+          align-items: center;
+          
+        }
+
+        h1{
+
+            margin-top: 5px;
+            margin-bottom: 10px;
+            margin: auto;
+           
+        }
+
+        .handsOn{
+         text-align: center;
+         margin-top: 3%;
+         margin-bottom: 20px;
+         
+        }
+
+
+        .experience{
+
+        
+            width: 70%;
+            margin-left: 15px;
+            margin-right: 15px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;    
+          grid-gap: 25px;
+
+          margin: auto;
+          align-items: center;
+
+        }
+
+
+        
+
+        .contacts{
+            margin: auto;
+            margin-top: 0%;
+            padding: 0%;
+        }
+
+        footer{
+         
+         background-color: #9E9E9E;
+          display: flex;
+            margin: auto;
+            width: 100%;
+            
+        }
+
+        .econtact{
+          padding: 0%;
+          margin: 0%;
+
+        }
+        .lcontact{
+          padding: 0%;
+          margin: 0%;
+        }
+        .tcontact{
+          padding: 0%;
+          margin: 0%;
+        }
+
+        .ccontact{
+          padding: 0%;
+          margin: 0%;
+        }
+
+
+      
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  :root {
+    --penguin-size: 70px;
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+  }
+
+  @media (max-width: 350px) {
+    :root {
+      /* Only change code below this line */
+
+     
+
+      /* Only change code above this line */
+    }
+  }
+
+  .penguin {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    
+    width: var(--penguin-size, 300px);
+    height: var(--penguin-size, 300px);
+  }
+
+  .right-cheek {
+    top: 15%;
+    left: 35%;
+    background: var(--penguin-belly, white);
+    width: 60%;
+    height: 70%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .left-cheek {
+    top: 15%;
+    left: 5%;
+    background: var(--penguin-belly, white);
+    width: 60%;
+    height: 70%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .belly {
+    top: 60%;
+    left: 2.5%;
+    background: var(--penguin-belly, white);
+    width: 95%;
+    height: 100%;
+    border-radius: 120% 120% 100% 100%;
+  }
+
+  .penguin-top {
+    top: 10%;
+    left: 25%;
+    background: var(--penguin-skin, gray);
+    width: 50%;
+    height: 45%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .penguin-bottom {
+    top: 40%;
+    left: 23.5%;
+    background: var(--penguin-skin, gray);
+    width: 53%;
+    height: 45%;
+    border-radius: 70% 70% 100% 100%;
+  }
+
+  .right-hand {
+    top: 5%;
+    left: 25%;
+    background: var(--penguin-skin, black);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 120% 30%;
+    transform: rotate(130deg);
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    transform-origin:0% 0%;
+    animation-timing-function: linear;
+  }
+
+  @keyframes wave {
+      10% {
+        transform: rotate(110deg);
+      }
+      20% {
+        transform: rotate(130deg);
+      }
+      30% {
+        transform: rotate(110deg);
+      }
+      40% {
+        transform: rotate(130deg);
+      }
+    }
+
+  .left-hand {
+    top: 0%;
+    left: 75%;
+    background: var(--penguin-skin, gray);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 30% 120%;
+    transform: rotate(-45deg);
+    z-index: -1;
+  }
+
+  .right-feet {
+    top: 85%;
+    left: 60%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(-80deg);
+    z-index: -2222;
+  }
+
+  .left-feet {
+    top: 85%;
+    left: 25%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(80deg);
+    z-index: -2222;
+  }
+
+  .right-eye {
+    top: 45%;
+    left: 60%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+  }
+
+  .left-eye {
+    top: 45%;
+    left: 25%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+  }
+
+  .sparkle {
+    top: 25%;
+    left:-23%;
+    background: white;
+    width: 150%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .blush-right {
+    top: 65%;
+    left: 15%;
+    background: pink;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  .blush-left {
+    top: 65%;
+    left: 70%;
+    background: pink;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  .beak-top {
+    top: 60%;
+    left: 40%;
+    background: var(--penguin-beak, orange);
+    width: 20%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  .beak-bottom {
+    top: 65%;
+    left: 42%;
+    background: var(--penguin-beak, orange);
+    width: 16%;
+    height: 10%;
+    border-radius: 50%;
+  }
+
+  body {
+    /*
+    background:#c6faf1;
+    */
+    background:#c6faf1;
+    background-image: url("freeback.png");
+    
+  }
+
+  .penguin * {
+    position: absolute;
+  }
+
+
+    </style>
+
+
+    <body>
+
+        <header>
+
+           <!--h1>FullStack-Developer</h1--> 
+
+        </header>
+
+
+        <main>
+
+
+        <div class="fullCard" id="thumbnail">
+
+            <div class="cardContent">
+                <div class="cardText">
+                    <h4>FullStack Developer</h4>
+
+
+                    <div class="penguin">
+                        <div class="penguin-bottom">
+                          <div class="right-hand"></div>
+                          <div class="left-hand"></div>
+                          <div class="right-feet"></div>
+                          <div class="left-feet"></div>
+                        </div>
+                        <div class="penguin-top">
+                          <div class="right-cheek"></div>
+                          <div class="left-cheek"></div>
+                          <div class="belly"></div>
+                          <div class="right-eye">
+                            <div class="sparkle"></div>
+                          </div>
+                          <div class="left-eye">
+                            <div class="sparkle"></div>
+                          </div>
+                          <div class="blush-right"></div>
+                          <div class="blush-left"></div>
+                          <div class="beak-top"></div>
+                          <div class="beak-bottom"></div>
+                        </div>
+                      </div>
+
+
+
+                    <hr>
+                    <p ><em><strong class="jina" >****** Gabriel Rogath Assenga****** </strong></em></p>
+                    <p class="stack"><em>Hi,
+                      I am Software Developer in web and mobile Applications based in  Dar es Salaam, Tanzania. 
+                      This is a brief portfolio which explains my skills. For now I work as a freelancer,
+                      but also in some case the agreement of the work can change depending on the nature of the project with the customer or the employer. 
+                      I am very pleased that you are here, You can go through his portfolio, 
+                      and do not hesitate to contact me.I am eagerly expecting to work with you. </em></p>
+                    <p class="mawasiliano"> <b> Email:</b> <a href="mailto:gassenga080@gmail.com">gassenga080@gmail.com</a>  &nbsp; &nbsp; <b> Linkedin: </b> <a href="https://www.linkedin.com/in/gabriel-rogath-080/"> linkedin.com/in/gabriel-rogath-080 </a> &nbsp; &nbsp; <b>Twitter :</b>  <a href="https://twitter.com/GabrielRogath">@GabrielRogath</a></p>
+                    <!--p class="twitter"> <b>Twitter :</b>  <a href="https://twitter.com/GabrielRogath">@GabrielRogath</a> </p-->
+                </div>
+
+                <div class="cardLinks">
+
+
+                </div>
+            </div>
+        </div>
+
+
+       <div>
+
+       
+        <div class="maincontainer">
+       <div class="downcontainer">
+
+      
+        <div class="item1"> 
+            <h4>Microservices</h4> 
+            <p><em>I have skills in Deploying Microservices with Eureka in Spring Framework. 
+                Knowledge in working with Platform-as-a-service (PaaS) mostly I use Heroku, Git & GitHub.</em>
+            </p>
+        </div>
+
+        <div class="item2">
+            <h4>Web Development </h4>
+            <p> <em>In Web Development I mostly use Spring and laravel as Backends Frameworks together with Vue.js and Angular for Frontends.
+                 Just like many Developers HTML5 & CSS and JavaSript were my first and basic skills that I learned at the begining of my carrier.
+                </em>
+            </p>
+        </div>
+        <div class="item3">
+            <h4>Android Development </h4>
+            <p><em>On mobile apps I am based on Android application Development,
+                 It is fairly to say that Android Studio IDE is my best tool that I only use to make android apps. 
+                </em>
+            </p>
+        </div>
+        <div class="item4">
+            <h4> Programming Languages:</h4>
+            <p><em>
+                Java is one of my best programming language since it was the first language that I learned at College,
+                 I use it in developing mobile Apps, Web Apps, APIs and Microservices.
+                PHP is also a best language, I use it for scripting to communicate with servers and Web Development. 
+                I also use JavaScript for both Backend and Frontend.
+            </em>
+            </p>
+        </div>
+        <div class="item5">
+            <h4>Databases</h4>
+            <p><em>
+                SQL is a fundamental for any Backend Developer while working with Servers.
+                 Most of my practice are with MySQL server(MariaDB).
+                Non-SQL database are sometimes good for practical and add knowledge,I like Firebase.
+            </em>
+            </p>
+        </div>
+        <div class="item6">
+            <h4>Additional Knowledge in 2021</h4>
+            <p><em>Due to the fact that Technology is highly evolving, this year will be a continuation of learning deep on the above, 
+              and adding more new technologies in my skills so as to become more competent as a Senior Developer.
+            </em>
+            </p>
+        
+        </div>
+    </div>
+
+    </div>
+
+
+    
+
+
+
+        <hr>
+
+        
+      <h1 class="handsOn"><u>Hands On Technologies</u></h1>
+
+        <div class="experience">
+          
+
+            <div class=""> <a href="https://www.java.com/en/">  <img src="java.png" alt="Java" width="150px" height="150px"></a> </div>
+            <div class=""> <a href="https://www.php.net/">  <img src="php.png" alt="PHP"  width="150px" height="150px"></a></div>
+            <div class=""> <a href="https://www.javascript.com/">  <img src="js.png" alt="javaScript"  width="150px" height="150px"> </a></div>
+            <div class=""> <a href="https://html.com/">  <img src="html.png" alt="HTML"  width="150px" height="150px"></a> </div>
+            <div class=""><a href="https://www.w3.org/Style/CSS20/history.html">   <img src="css.png" alt="CSS"  width="150px" height="150px"> </a></div>
+            <div class=""> <a href="https://spring.io/">  <img src="spring.png" alt="Spring"  width="150px" height="150px"> </a></div>
+            <div class=""> <a href="https://github.com/Netflix/eureka">  <img src="eureka.jpg" alt="Eureka"  width="150px" height="150px"> </a></div>
+            <div class=""> <a href="https://github.com/">  <img src="git.png" alt="GIt & Github"  width="150px" height="150px"> </a> </div>
+            <div class=""> <a href="https://www.heroku.com/">  <img src="heroku.png" alt="Heroku"  width="150px" height="150px"> </a></div>
+            <div class=""> <a href="https://laravel.com/">  <img src="laravel.jpg" alt="Laravel"  width="150px" height="150px"> </a></div>
+            <div class=""><a href="https://firebase.google.com/">   <img src="firebase.png" alt="Firebase"  width="150px" height="150px"></a> </div>
+            <div class=""> <a href="https://www.mysql.com/">  <img src="mysql.png" alt="Mysql"  width="150px" height="150px"></a> </div>
+            <div class=""> <a href="https://www.postgresql.org/">  <img src="postgresql.png" alt="Postgresql"  width="150px" height="150px"></a> </div>
+           
+
+        </div>
+
+
+        <hr>
+
+
+    <!--h1>My Projects</h1>
+    <div class="projectscontainer">
+        <div class="poject1">
+            <a href="https://play.google.com/store/apps/details?id=com.sdgpamoja"> SDGsPamoja
+                <img src="SDGsPamoja.png" alt="SDGsPamoja App" width="25%" height="25%"></a>
+            <p>SDGsPamoja App is intended to promote the UN's Sustainable Development Goals (SDGs) and
+               encourage local communities to engage directly with actions that lead to the achievement of the goals by 2030.
+              The services provided by SDGsPamoja App does not promote or encourage any political issues.
+              Also, SDGsPamoja App is not a platform for business or social activities,
+               but only for those associated or related with Sustainable Development Goals.</p>
+         </div>
+
+         <div class="poject3">
+          <a href="https://play.google.com/store/apps/details?id=com.darasa.darasanyumbani">Darasa Nyumbani
+              <img src="darasaNyumbani.png" alt="Darasa Nyumbani" width="25%" height="25%"></a>
+              <p>Within the app you can ask a question of the subjects of your choice and wait for a teacher,
+                volunteer or fellow student to answer your question.
+
+                Also past paper exams of difference years from NACTE(National Examination Council of Tanzania) are included in the app,
+                You are encourage to go through some of the questions and share your answers.</p>
+          
+      </div>
+
+        <div class="poject2">
+            <a href="https://play.google.com/store/apps/details?id=com.mapendo.mapendo">Mapendo
+                <img src="mapendo.png" alt="Mapendo" width="25%" height="25%"></a>
+                <p>Mapendo Capital & Financial servicesregistered by the Business Registration Licensing Agency (BRELA) in Tanzania.
+                  The company was established in July 2015 and its main objective is to provide loans to individuals from all works of life.
+                  Our financial services aim at reaching out to those who are in need of financial services but cannot easily 
+                  and on time access such services from banks and other established financial institutions</p>
+            
+        </div>
+       
+    </div-->
+
+       
+
+
+      </main>
+
+
+        <footer>
+            <div class="contacts">
+                
+            <h5 class="econtact">Email: <a href="mailto:gassenga080@gmail.com">gassenga080@gmail.com</a> </h5>
+            <h5 class="lcontact">LinkedIn: <a href="https://www.linkedin.com/in/gabriel-rogath-080/"> linkedin.com/in/gabriel-rogath-080 </a></h5>
+            <h5 class="tcontact">Twitter: <a href="https://twitter.com/GabrielRogath">@GabrielRogath</a></h5>
+            <h5 class="ccontact">Copywright: © 2021 Gabriel Rogath</h5>
+            
+           </div>
+        </footer>
+
+    </body>
+</html>
